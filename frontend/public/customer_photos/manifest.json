@@ -1,0 +1,944 @@
+{
+  "1": {
+    "customerId": 1,
+    "customerName": "Sample Customer",
+    "thumbnailPath": null,
+    "photoCount": 0,
+    "photos": []
+  },
+  "2": {
+    "customerId": 2,
+    "customerName": "John Carter",
+    "thumbnailPath": null,
+    "photoCount": 0,
+    "photos": []
+  },
+  "3": {
+    "customerId": 3,
+    "customerName": "Emily Nguyen",
+    "thumbnailPath": null,
+    "photoCount": 0,
+    "photos": []
+  },
+  "4": {
+    "customerId": 4,
+    "customerName": "Michael Brooks",
+    "thumbnailPath": null,
+    "photoCount": 0,
+    "photos": []
+  },
+  "5": {
+    "customerId": 5,
+    "customerName": "Sarah Johnson",
+    "thumbnailPath": null,
+    "photoCount": 0,
+    "photos": []
+  },
+  "6": {
+    "customerId": 6,
+    "customerName": "DAVID MARTINEZ",
+    "thumbnailPath": null,
+    "photoCount": 0,
+    "photos": []
+  },
+  "7": {
+    "customerId": 7,
+    "customerName": "Jessica Lee",
+    "thumbnailPath": null,
+    "photoCount": 0,
+    "photos": []
+  },
+  "8": {
+    "customerId": 8,
+    "customerName": "Robert Wilson",
+    "thumbnailPath": null,
+    "photoCount": 0,
+    "photos": []
+  },
+  "9": {
+    "customerId": 9,
+    "customerName": "Amanda Clark",
+    "thumbnailPath": null,
+    "photoCount": 0,
+    "photos": []
+  },
+  "10": {
+    "customerId": 10,
+    "customerName": "James Anderson",
+    "thumbnailPath": null,
+    "photoCount": 0,
+    "photos": []
+  },
+  "11": {
+    "customerId": 11,
+    "customerName": "Laura Bennett",
+    "thumbnailPath": null,
+    "photoCount": 0,
+    "photos": []
+  },
+  "12": {
+    "customerId": 12,
+    "customerName": "Daniel Rivera",
+    "thumbnailPath": null,
+    "photoCount": 0,
+    "photos": []
+  },
+  "13": {
+    "customerId": 13,
+    "customerName": "Rachel Green",
+    "thumbnailPath": null,
+    "photoCount": 0,
+    "photos": []
+  },
+  "14": {
+    "customerId": 14,
+    "customerName": "Christopher Hall",
+    "thumbnailPath": null,
+    "photoCount": 0,
+    "photos": []
+  },
+  "15": {
+    "customerId": 15,
+    "customerName": "Megan Foster",
+    "thumbnailPath": null,
+    "photoCount": 0,
+    "photos": []
+  },
+  "16": {
+    "customerId": 16,
+    "customerName": "Andrew Price",
+    "thumbnailPath": null,
+    "photoCount": 0,
+    "photos": []
+  },
+  "17": {
+    "customerId": 17,
+    "customerName": "Olivia Ward",
+    "thumbnailPath": null,
+    "photoCount": 0,
+    "photos": []
+  },
+  "18": {
+    "customerId": 18,
+    "customerName": "OLIVIA WARD",
+    "thumbnailPath": "/customer_photos/18/placeholder_1.svg",
+    "photoCount": 6,
+    "photos": [
+      {
+        "file_name": "placeholder_1.svg",
+        "file_path": "/customer_photos/18/placeholder_1.svg",
+        "category": "placeholder",
+        "is_primary": 1,
+        "display_order": 0
+      },
+      {
+        "file_name": "placeholder_1.svg",
+        "file_path": "/customer_photos/18/placeholder_1.svg",
+        "category": "placeholder",
+        "is_primary": 1,
+        "display_order": 0
+      },
+      {
+        "file_name": "placeholder_2.svg",
+        "file_path": "/customer_photos/18/placeholder_2.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 1
+      },
+      {
+        "file_name": "placeholder_2.svg",
+        "file_path": "/customer_photos/18/placeholder_2.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 1
+      },
+      {
+        "file_name": "placeholder_3.svg",
+        "file_path": "/customer_photos/18/placeholder_3.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 2
+      },
+      {
+        "file_name": "placeholder_3.svg",
+        "file_path": "/customer_photos/18/placeholder_3.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 2
+      }
+    ]
+  },
+  "19": {
+    "customerId": 19,
+    "customerName": "BRIAN COOPER",
+    "thumbnailPath": "/customer_photos/19/placeholder_1.svg",
+    "photoCount": 6,
+    "photos": [
+      {
+        "file_name": "placeholder_1.svg",
+        "file_path": "/customer_photos/19/placeholder_1.svg",
+        "category": "placeholder",
+        "is_primary": 1,
+        "display_order": 0
+      },
+      {
+        "file_name": "placeholder_1.svg",
+        "file_path": "/customer_photos/19/placeholder_1.svg",
+        "category": "placeholder",
+        "is_primary": 1,
+        "display_order": 0
+      },
+      {
+        "file_name": "placeholder_2.svg",
+        "file_path": "/customer_photos/19/placeholder_2.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 1
+      },
+      {
+        "file_name": "placeholder_2.svg",
+        "file_path": "/customer_photos/19/placeholder_2.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 1
+      },
+      {
+        "file_name": "placeholder_3.svg",
+        "file_path": "/customer_photos/19/placeholder_3.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 2
+      },
+      {
+        "file_name": "placeholder_3.svg",
+        "file_path": "/customer_photos/19/placeholder_3.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 2
+      }
+    ]
+  },
+  "20": {
+    "customerId": 20,
+    "customerName": "LAURA BENNETT",
+    "thumbnailPath": "/customer_photos/20/placeholder_1.svg",
+    "photoCount": 6,
+    "photos": [
+      {
+        "file_name": "placeholder_1.svg",
+        "file_path": "/customer_photos/20/placeholder_1.svg",
+        "category": "placeholder",
+        "is_primary": 1,
+        "display_order": 0
+      },
+      {
+        "file_name": "placeholder_1.svg",
+        "file_path": "/customer_photos/20/placeholder_1.svg",
+        "category": "placeholder",
+        "is_primary": 1,
+        "display_order": 0
+      },
+      {
+        "file_name": "placeholder_2.svg",
+        "file_path": "/customer_photos/20/placeholder_2.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 1
+      },
+      {
+        "file_name": "placeholder_2.svg",
+        "file_path": "/customer_photos/20/placeholder_2.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 1
+      },
+      {
+        "file_name": "placeholder_3.svg",
+        "file_path": "/customer_photos/20/placeholder_3.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 2
+      },
+      {
+        "file_name": "placeholder_3.svg",
+        "file_path": "/customer_photos/20/placeholder_3.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 2
+      }
+    ]
+  },
+  "21": {
+    "customerId": 21,
+    "customerName": "DAVID MARTINEZ",
+    "thumbnailPath": "/customer_photos/21/placeholder_1.svg",
+    "photoCount": 6,
+    "photos": [
+      {
+        "file_name": "placeholder_1.svg",
+        "file_path": "/customer_photos/21/placeholder_1.svg",
+        "category": "placeholder",
+        "is_primary": 1,
+        "display_order": 0
+      },
+      {
+        "file_name": "placeholder_1.svg",
+        "file_path": "/customer_photos/21/placeholder_1.svg",
+        "category": "placeholder",
+        "is_primary": 1,
+        "display_order": 0
+      },
+      {
+        "file_name": "placeholder_2.svg",
+        "file_path": "/customer_photos/21/placeholder_2.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 1
+      },
+      {
+        "file_name": "placeholder_2.svg",
+        "file_path": "/customer_photos/21/placeholder_2.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 1
+      },
+      {
+        "file_name": "placeholder_3.svg",
+        "file_path": "/customer_photos/21/placeholder_3.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 2
+      },
+      {
+        "file_name": "placeholder_3.svg",
+        "file_path": "/customer_photos/21/placeholder_3.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 2
+      }
+    ]
+  },
+  "22": {
+    "customerId": 22,
+    "customerName": "MICHAEL BROOKS",
+    "thumbnailPath": "/customer_photos/22/placeholder_1.svg",
+    "photoCount": 6,
+    "photos": [
+      {
+        "file_name": "placeholder_1.svg",
+        "file_path": "/customer_photos/22/placeholder_1.svg",
+        "category": "placeholder",
+        "is_primary": 1,
+        "display_order": 0
+      },
+      {
+        "file_name": "placeholder_1.svg",
+        "file_path": "/customer_photos/22/placeholder_1.svg",
+        "category": "placeholder",
+        "is_primary": 1,
+        "display_order": 0
+      },
+      {
+        "file_name": "placeholder_2.svg",
+        "file_path": "/customer_photos/22/placeholder_2.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 1
+      },
+      {
+        "file_name": "placeholder_2.svg",
+        "file_path": "/customer_photos/22/placeholder_2.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 1
+      },
+      {
+        "file_name": "placeholder_3.svg",
+        "file_path": "/customer_photos/22/placeholder_3.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 2
+      },
+      {
+        "file_name": "placeholder_3.svg",
+        "file_path": "/customer_photos/22/placeholder_3.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 2
+      }
+    ]
+  },
+  "23": {
+    "customerId": 23,
+    "customerName": "DANIEL RIVERA",
+    "thumbnailPath": "/customer_photos/23/placeholder_1.svg",
+    "photoCount": 6,
+    "photos": [
+      {
+        "file_name": "placeholder_1.svg",
+        "file_path": "/customer_photos/23/placeholder_1.svg",
+        "category": "placeholder",
+        "is_primary": 1,
+        "display_order": 0
+      },
+      {
+        "file_name": "placeholder_1.svg",
+        "file_path": "/customer_photos/23/placeholder_1.svg",
+        "category": "placeholder",
+        "is_primary": 1,
+        "display_order": 0
+      },
+      {
+        "file_name": "placeholder_2.svg",
+        "file_path": "/customer_photos/23/placeholder_2.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 1
+      },
+      {
+        "file_name": "placeholder_2.svg",
+        "file_path": "/customer_photos/23/placeholder_2.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 1
+      },
+      {
+        "file_name": "placeholder_3.svg",
+        "file_path": "/customer_photos/23/placeholder_3.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 2
+      },
+      {
+        "file_name": "placeholder_3.svg",
+        "file_path": "/customer_photos/23/placeholder_3.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 2
+      }
+    ]
+  },
+  "24": {
+    "customerId": 24,
+    "customerName": "JOHN CARTER",
+    "thumbnailPath": "/customer_photos/24/placeholder_1.svg",
+    "photoCount": 6,
+    "photos": [
+      {
+        "file_name": "placeholder_1.svg",
+        "file_path": "/customer_photos/24/placeholder_1.svg",
+        "category": "placeholder",
+        "is_primary": 1,
+        "display_order": 0
+      },
+      {
+        "file_name": "placeholder_1.svg",
+        "file_path": "/customer_photos/24/placeholder_1.svg",
+        "category": "placeholder",
+        "is_primary": 1,
+        "display_order": 0
+      },
+      {
+        "file_name": "placeholder_2.svg",
+        "file_path": "/customer_photos/24/placeholder_2.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 1
+      },
+      {
+        "file_name": "placeholder_2.svg",
+        "file_path": "/customer_photos/24/placeholder_2.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 1
+      },
+      {
+        "file_name": "placeholder_3.svg",
+        "file_path": "/customer_photos/24/placeholder_3.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 2
+      },
+      {
+        "file_name": "placeholder_3.svg",
+        "file_path": "/customer_photos/24/placeholder_3.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 2
+      }
+    ]
+  },
+  "25": {
+    "customerId": 25,
+    "customerName": "EMILY NGUYEN",
+    "thumbnailPath": "/customer_photos/25/placeholder_1.svg",
+    "photoCount": 6,
+    "photos": [
+      {
+        "file_name": "placeholder_1.svg",
+        "file_path": "/customer_photos/25/placeholder_1.svg",
+        "category": "placeholder",
+        "is_primary": 1,
+        "display_order": 0
+      },
+      {
+        "file_name": "placeholder_1.svg",
+        "file_path": "/customer_photos/25/placeholder_1.svg",
+        "category": "placeholder",
+        "is_primary": 1,
+        "display_order": 0
+      },
+      {
+        "file_name": "placeholder_2.svg",
+        "file_path": "/customer_photos/25/placeholder_2.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 1
+      },
+      {
+        "file_name": "placeholder_2.svg",
+        "file_path": "/customer_photos/25/placeholder_2.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 1
+      },
+      {
+        "file_name": "placeholder_3.svg",
+        "file_path": "/customer_photos/25/placeholder_3.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 2
+      },
+      {
+        "file_name": "placeholder_3.svg",
+        "file_path": "/customer_photos/25/placeholder_3.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 2
+      }
+    ]
+  },
+  "26": {
+    "customerId": 26,
+    "customerName": "MEGAN FOSTER",
+    "thumbnailPath": "/customer_photos/26/placeholder_1.svg",
+    "photoCount": 6,
+    "photos": [
+      {
+        "file_name": "placeholder_1.svg",
+        "file_path": "/customer_photos/26/placeholder_1.svg",
+        "category": "placeholder",
+        "is_primary": 1,
+        "display_order": 0
+      },
+      {
+        "file_name": "placeholder_1.svg",
+        "file_path": "/customer_photos/26/placeholder_1.svg",
+        "category": "placeholder",
+        "is_primary": 1,
+        "display_order": 0
+      },
+      {
+        "file_name": "placeholder_2.svg",
+        "file_path": "/customer_photos/26/placeholder_2.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 1
+      },
+      {
+        "file_name": "placeholder_2.svg",
+        "file_path": "/customer_photos/26/placeholder_2.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 1
+      },
+      {
+        "file_name": "placeholder_3.svg",
+        "file_path": "/customer_photos/26/placeholder_3.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 2
+      },
+      {
+        "file_name": "placeholder_3.svg",
+        "file_path": "/customer_photos/26/placeholder_3.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 2
+      }
+    ]
+  },
+  "27": {
+    "customerId": 27,
+    "customerName": "SARAH JOHNSON",
+    "thumbnailPath": "/customer_photos/27/placeholder_1.svg",
+    "photoCount": 6,
+    "photos": [
+      {
+        "file_name": "placeholder_1.svg",
+        "file_path": "/customer_photos/27/placeholder_1.svg",
+        "category": "placeholder",
+        "is_primary": 1,
+        "display_order": 0
+      },
+      {
+        "file_name": "placeholder_1.svg",
+        "file_path": "/customer_photos/27/placeholder_1.svg",
+        "category": "placeholder",
+        "is_primary": 1,
+        "display_order": 0
+      },
+      {
+        "file_name": "placeholder_2.svg",
+        "file_path": "/customer_photos/27/placeholder_2.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 1
+      },
+      {
+        "file_name": "placeholder_2.svg",
+        "file_path": "/customer_photos/27/placeholder_2.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 1
+      },
+      {
+        "file_name": "placeholder_3.svg",
+        "file_path": "/customer_photos/27/placeholder_3.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 2
+      },
+      {
+        "file_name": "placeholder_3.svg",
+        "file_path": "/customer_photos/27/placeholder_3.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 2
+      }
+    ]
+  },
+  "28": {
+    "customerId": 28,
+    "customerName": "AMANDA CLARK",
+    "thumbnailPath": "/customer_photos/28/placeholder_1.svg",
+    "photoCount": 6,
+    "photos": [
+      {
+        "file_name": "placeholder_1.svg",
+        "file_path": "/customer_photos/28/placeholder_1.svg",
+        "category": "placeholder",
+        "is_primary": 1,
+        "display_order": 0
+      },
+      {
+        "file_name": "placeholder_1.svg",
+        "file_path": "/customer_photos/28/placeholder_1.svg",
+        "category": "placeholder",
+        "is_primary": 1,
+        "display_order": 0
+      },
+      {
+        "file_name": "placeholder_2.svg",
+        "file_path": "/customer_photos/28/placeholder_2.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 1
+      },
+      {
+        "file_name": "placeholder_2.svg",
+        "file_path": "/customer_photos/28/placeholder_2.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 1
+      },
+      {
+        "file_name": "placeholder_3.svg",
+        "file_path": "/customer_photos/28/placeholder_3.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 2
+      },
+      {
+        "file_name": "placeholder_3.svg",
+        "file_path": "/customer_photos/28/placeholder_3.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 2
+      }
+    ]
+  },
+  "29": {
+    "customerId": 29,
+    "customerName": "CHRISTOPHER HALL",
+    "thumbnailPath": "/customer_photos/29/placeholder_1.svg",
+    "photoCount": 6,
+    "photos": [
+      {
+        "file_name": "placeholder_1.svg",
+        "file_path": "/customer_photos/29/placeholder_1.svg",
+        "category": "placeholder",
+        "is_primary": 1,
+        "display_order": 0
+      },
+      {
+        "file_name": "placeholder_1.svg",
+        "file_path": "/customer_photos/29/placeholder_1.svg",
+        "category": "placeholder",
+        "is_primary": 1,
+        "display_order": 0
+      },
+      {
+        "file_name": "placeholder_2.svg",
+        "file_path": "/customer_photos/29/placeholder_2.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 1
+      },
+      {
+        "file_name": "placeholder_2.svg",
+        "file_path": "/customer_photos/29/placeholder_2.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 1
+      },
+      {
+        "file_name": "placeholder_3.svg",
+        "file_path": "/customer_photos/29/placeholder_3.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 2
+      },
+      {
+        "file_name": "placeholder_3.svg",
+        "file_path": "/customer_photos/29/placeholder_3.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 2
+      }
+    ]
+  },
+  "30": {
+    "customerId": 30,
+    "customerName": "SAMPLE CUSTOMER",
+    "thumbnailPath": "/customer_photos/30/placeholder_1.svg",
+    "photoCount": 6,
+    "photos": [
+      {
+        "file_name": "placeholder_1.svg",
+        "file_path": "/customer_photos/30/placeholder_1.svg",
+        "category": "placeholder",
+        "is_primary": 1,
+        "display_order": 0
+      },
+      {
+        "file_name": "placeholder_1.svg",
+        "file_path": "/customer_photos/30/placeholder_1.svg",
+        "category": "placeholder",
+        "is_primary": 1,
+        "display_order": 0
+      },
+      {
+        "file_name": "placeholder_2.svg",
+        "file_path": "/customer_photos/30/placeholder_2.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 1
+      },
+      {
+        "file_name": "placeholder_2.svg",
+        "file_path": "/customer_photos/30/placeholder_2.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 1
+      },
+      {
+        "file_name": "placeholder_3.svg",
+        "file_path": "/customer_photos/30/placeholder_3.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 2
+      },
+      {
+        "file_name": "placeholder_3.svg",
+        "file_path": "/customer_photos/30/placeholder_3.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 2
+      }
+    ]
+  },
+  "31": {
+    "customerId": 31,
+    "customerName": "NATALIE REED",
+    "thumbnailPath": null,
+    "photoCount": 0,
+    "photos": []
+  },
+  "32": {
+    "customerId": 32,
+    "customerName": "JAMES ANDERSON",
+    "thumbnailPath": "/customer_photos/32/placeholder_1.svg",
+    "photoCount": 6,
+    "photos": [
+      {
+        "file_name": "placeholder_1.svg",
+        "file_path": "/customer_photos/32/placeholder_1.svg",
+        "category": "placeholder",
+        "is_primary": 1,
+        "display_order": 0
+      },
+      {
+        "file_name": "placeholder_1.svg",
+        "file_path": "/customer_photos/32/placeholder_1.svg",
+        "category": "placeholder",
+        "is_primary": 1,
+        "display_order": 0
+      },
+      {
+        "file_name": "placeholder_2.svg",
+        "file_path": "/customer_photos/32/placeholder_2.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 1
+      },
+      {
+        "file_name": "placeholder_2.svg",
+        "file_path": "/customer_photos/32/placeholder_2.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 1
+      },
+      {
+        "file_name": "placeholder_3.svg",
+        "file_path": "/customer_photos/32/placeholder_3.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 2
+      },
+      {
+        "file_name": "placeholder_3.svg",
+        "file_path": "/customer_photos/32/placeholder_3.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 2
+      }
+    ]
+  },
+  "33": {
+    "customerId": 33,
+    "customerName": "RACHEL GREEN",
+    "thumbnailPath": "/customer_photos/33/placeholder_1.svg",
+    "photoCount": 3,
+    "photos": [
+      {
+        "file_name": "placeholder_1.svg",
+        "file_path": "/customer_photos/33/placeholder_1.svg",
+        "category": "placeholder",
+        "is_primary": 1,
+        "display_order": 0
+      },
+      {
+        "file_name": "placeholder_2.svg",
+        "file_path": "/customer_photos/33/placeholder_2.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 1
+      },
+      {
+        "file_name": "placeholder_3.svg",
+        "file_path": "/customer_photos/33/placeholder_3.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 2
+      }
+    ]
+  },
+  "34": {
+    "customerId": 34,
+    "customerName": "JESSICA LEE",
+    "thumbnailPath": "/customer_photos/34/placeholder_1.svg",
+    "photoCount": 3,
+    "photos": [
+      {
+        "file_name": "placeholder_1.svg",
+        "file_path": "/customer_photos/34/placeholder_1.svg",
+        "category": "placeholder",
+        "is_primary": 1,
+        "display_order": 0
+      },
+      {
+        "file_name": "placeholder_2.svg",
+        "file_path": "/customer_photos/34/placeholder_2.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 1
+      },
+      {
+        "file_name": "placeholder_3.svg",
+        "file_path": "/customer_photos/34/placeholder_3.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 2
+      }
+    ]
+  },
+  "35": {
+    "customerId": 35,
+    "customerName": "ROBERT WILSON",
+    "thumbnailPath": "/customer_photos/35/placeholder_1.svg",
+    "photoCount": 3,
+    "photos": [
+      {
+        "file_name": "placeholder_1.svg",
+        "file_path": "/customer_photos/35/placeholder_1.svg",
+        "category": "placeholder",
+        "is_primary": 1,
+        "display_order": 0
+      },
+      {
+        "file_name": "placeholder_2.svg",
+        "file_path": "/customer_photos/35/placeholder_2.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 1
+      },
+      {
+        "file_name": "placeholder_3.svg",
+        "file_path": "/customer_photos/35/placeholder_3.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 2
+      }
+    ]
+  },
+  "36": {
+    "customerId": 36,
+    "customerName": "ANDREW PRICE",
+    "thumbnailPath": "/customer_photos/36/placeholder_1.svg",
+    "photoCount": 3,
+    "photos": [
+      {
+        "file_name": "placeholder_1.svg",
+        "file_path": "/customer_photos/36/placeholder_1.svg",
+        "category": "placeholder",
+        "is_primary": 1,
+        "display_order": 0
+      },
+      {
+        "file_name": "placeholder_2.svg",
+        "file_path": "/customer_photos/36/placeholder_2.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 1
+      },
+      {
+        "file_name": "placeholder_3.svg",
+        "file_path": "/customer_photos/36/placeholder_3.svg",
+        "category": "placeholder",
+        "is_primary": 0,
+        "display_order": 2
+      }
+    ]
+  }
+}
