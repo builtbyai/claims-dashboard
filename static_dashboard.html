@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supplement Dashboard - Static View</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .sync-status {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 15px;
+            padding: 15px;
+            background: #f0f4f8;
+            border-radius: 10px;
+        }
+
+        .sync-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #22c55e;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .stat-value {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .section {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 1.8em;
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .customer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .customer-card {
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 20px;
+            transition: all 0.3s;
+        }
+
+        .customer-card:hover {
+            border-color: #667eea;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
+        }
+
+        .customer-name {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .install-date {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .photo-item {
+            position: relative;
+            padding-top: 100%;
+            overflow: hidden;
+            border-radius: 8px;
+            background: #f0f4f8;
+        }
+
+        .photo-item img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .photo-item img:hover {
+            transform: scale(1.1);
+        }
+
+        .loading {
+            text-align: center;
+            padding: 50px;
+            font-size: 1.3em;
+            color: #666;
+        }
+
+        .error {
+            background: #fee;
+            color: #c33;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .refresh-btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .refresh-btn:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .tab {
+            padding: 12px 25px;
+            background: #f0f4f8;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 1em;
+        }
+
+        .tab.active {
+            background: #667eea;
+            color: white;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        /* Modal for photo viewer */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.9);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal img {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            color: white;
+            font-size: 40px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 Supplement Dashboard</h1>
+            <p style="color: #666; margin-top: 10px;">Auto-syncing data from Roof.link and CSV sources</p>
+            <div class="sync-status">
+                <div class="sync-indicator"></div>
+                <span id="sync-status-text">Checking sync status...</span>
+                <button class="refresh-btn" onclick="refreshData()" style="margin-left: auto;">🔄 Refresh</button>
+            </div>
+        </header>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-label">Total Customers</div>
+                <div class="stat-value" id="stat-customers">-</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Install Dates</div>
+                <div class="stat-value" id="stat-installs">-</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Roof.link Jobs</div>
+                <div class="stat-value" id="stat-jobs">-</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Last Sync</div>
+                <div class="stat-value" id="stat-sync" style="font-size: 1.2em;">-</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">📅 Customers with Install Dates</div>
+
+            <div class="tabs">
+                <button class="tab active" onclick="switchTab('customers')">All Customers</button>
+                <button class="tab" onclick="switchTab('calendar')">Calendar View</button>
+                <button class="tab" onclick="switchTab('photos')">Photos</button>
+            </div>
+
+            <div id="tab-customers" class="tab-content active">
+                <div id="customer-list" class="loading">Loading customer data...</div>
+            </div>
+
+            <div id="tab-calendar" class="tab-content">
+                <div id="calendar-view" class="loading">Loading calendar...</div>
+            </div>
+
+            <div id="tab-photos" class="tab-content">
+                <div id="photos-view" class="loading">Loading photos...</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Photo Modal -->
+    <div id="photo-modal" class="modal" onclick="closeModal()">
+        <span class="modal-close">&times;</span>
+        <img id="modal-image" src="" alt="Full size photo">
+    </div>
+
+    <script>
+        const API_BASE = 'http://localhost:5004';
+        let currentTab = 'customers';
+        let unifiedData = null;
+
+        // Initialize
+        async function init() {
+            await loadData();
+            await checkSyncStatus();
+
+            // Auto-refresh every 30 seconds
+            setInterval(checkSyncStatus, 30000);
+            setInterval(loadData, 60000);
+        }
+
+        // Load unified data
+        async function loadData() {
+            try {
+                const response = await fetch(`${API_BASE}/data/unified_data.json`);
+                if (!response.ok) throw new Error('Failed to load data');
+
+                unifiedData = await response.json();
+                renderData();
+            } catch (error) {
+                console.error('Error loading data:', error);
+                document.getElementById('customer-list').innerHTML =
+                    `<div class="error">⚠️ Unable to load data. Make sure the backend server is running on port 5004.</div>`;
+            }
+        }
+
+        // Check sync status
+        async function checkSyncStatus() {
+            try {
+                const response = await fetch(`${API_BASE}/api/data-sync/status`);
+                const status = await response.json();
+
+                const lastSync = status.lastSyncTime ?
+                    new Date(status.lastSyncTime).toLocaleString() : 'Never';
+
+                document.getElementById('sync-status-text').textContent =
+                    status.isRunning ?
+                    `✅ Auto-sync active - Last: ${lastSync}` :
+                    `⚠️ Sync stopped - Last: ${lastSync}`;
+            } catch (error) {
+                document.getElementById('sync-status-text').textContent =
+                    '❌ Cannot connect to sync service';
+            }
+        }
+
+        // Render all data
+        function renderData() {
+            if (!unifiedData) return;
+
+            // Update stats
+            const metadata = unifiedData.metadata || {};
+            const sources = metadata.sources || {};
+
+            document.getElementById('stat-customers').textContent =
+                Object.keys(unifiedData.customerIndex || {}).length;
+            document.getElementById('stat-installs').textContent =
+                sources.installDates || 0;
+            document.getElementById('stat-jobs').textContent =
+                sources.rooflink || 0;
+            document.getElementById('stat-sync').textContent =
+                metadata.lastSync ? new Date(metadata.lastSync).toLocaleTimeString() : '-';
+
+            // Render active tab
+            renderCustomers();
+            renderCalendar();
+            renderPhotos();
+        }
+
+        // Render customer list
+        function renderCustomers() {
+            const container = document.getElementById('customer-list');
+            const customerIndex = unifiedData?.customerIndex || {};
+
+            if (Object.keys(customerIndex).length === 0) {
+                container.innerHTML = '<div class="loading">No customer data available</div>';
+                return;
+            }
+
+            let html = '<div class="customer-grid">';
+
+            for (const [name, data] of Object.entries(customerIndex)) {
+                const installDates = data.installDates || [];
+                const jobs = data.jobs || [];
+
+                html += `
+                    <div class="customer-card">
+                        <div class="customer-name">${name}</div>
+                        ${installDates.map(d => `
+                            <div class="install-date">📅 ${d.install_date}</div>
+                        `).join('')}
+                        <div style="margin-top: 15px; color: #666;">
+                            ${jobs.length > 0 ? `🔨 ${jobs.length} job(s)` : 'No jobs yet'}
+                        </div>
+                    </div>
+                `;
+            }
+
+            html += '</div>';
+            container.innerHTML = html;
+        }
+
+        // Render calendar view
+        function renderCalendar() {
+            const container = document.getElementById('calendar-view');
+            const installDates = unifiedData?.installDates?.all_entries || [];
+
+            if (installDates.length === 0) {
+                container.innerHTML = '<div class="loading">No install dates scheduled</div>';
+                return;
+            }
+
+            // Group by date
+            const byDate = {};
+            installDates.forEach(entry => {
+                const date = entry.install_date;
+                if (!byDate[date]) byDate[date] = [];
+                byDate[date].push(entry);
+            });
+
+            let html = '<div style="display: flex; flex-direction: column; gap: 20px;">';
+
+            for (const [date, entries] of Object.entries(byDate).sort()) {
+                html += `
+                    <div style="background: #f8fafc; padding: 20px; border-radius: 10px;">
+                        <h3 style="color: #667eea; margin-bottom: 15px;">📅 ${date}</h3>
+                        <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                            ${entries.map(e => `
+                                <div style="background: white; padding: 10px 20px; border-radius: 8px; border: 2px solid #667eea;">
+                                    ${e.customer_name || 'Unknown Customer'}
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                `;
+            }
+
+            html += '</div>';
+            container.innerHTML = html;
+        }
+
+        // Render photos (placeholder - would need photo data)
+        function renderPhotos() {
+            const container = document.getElementById('photos-view');
+            container.innerHTML = `
+                <div class="loading">
+                    Photo integration coming soon<br>
+                    Photos will be displayed from customer folders
+                </div>
+            `;
+        }
+
+        // Switch tabs
+        function switchTab(tabName) {
+            currentTab = tabName;
+
+            // Update tab buttons
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            // Update tab content
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            document.getElementById(`tab-${tabName}`).classList.add('active');
+        }
+
+        // Refresh data manually
+        async function refreshData() {
+            document.querySelector('.refresh-btn').textContent = '⏳ Refreshing...';
+
+            try {
+                // Trigger sync
+                await fetch(`${API_BASE}/api/data-sync/trigger`, { method: 'POST' });
+
+                // Wait a moment for sync to complete
+                await new Promise(resolve => setTimeout(resolve, 2000));
+
+                // Reload data
+                await loadData();
+            } catch (error) {
+                console.error('Error refreshing:', error);
+            }
+
+            document.querySelector('.refresh-btn').textContent = '🔄 Refresh';
+        }
+
+        // Photo modal
+        function openModal(imageSrc) {
+            document.getElementById('modal-image').src = imageSrc;
+            document.getElementById('photo-modal').classList.add('active');
+        }
+
+        function closeModal() {
+            document.getElementById('photo-modal').classList.remove('active');
+        }
+
+        // Start the app
+        init();
+    </script>
+</body>
+</html>
